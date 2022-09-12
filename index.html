@@ -8,19 +8,36 @@
     <title>ToDo List</title>
 </head>
 <body>
-    <h1>Список дел</h1>
-    <div class="addToDoList">
-        <input type="text" id="addToDoText">
-        <button data-id="addToDoButton" type="submit">Добавить</button>
-    </div>
-    
-    <div class="showToDoList">
+    <div class="basicContainer">
+       <div class="leftContainer">
 
+       </div>
+       
+       <div class="rightContainer"> 
+            
+            <div class="headerOfRightSection" id="headerOfRightSection">
+                <h1>Список дел</h1>
+                <div class="TimeAndDate">
+                    <div class="time" id="time"></div>
+                    <div class="date" id="date"></div>
 
+                </div>
+                <!-- <hr> -->
+            </div>
+            
+            <div class="showToDoList">
+                            
+            </div>
+            
+            <div class="addToDoList">
+                <input class="addToDoTextInput" type="text" id="addToDoText" autofocus="autofocus">
+                <div class="buttonBlock">
+                    <button class="submitAddToDoButton" data-id="addToDoButton" type="submit">+</button>
+                </div>
+            </div>
+        </div>
         
-    </div>
-    <div>
-        <!-- <ul>Первый пункт <button id="1">Выполнено</button></ul> -->
+
     </div>
     
     

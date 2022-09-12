@@ -1,7 +1,145 @@
-.addToDoList {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap');
 
+html, body {
+    font-family: Montserrat, sans-serif;
+    background-color: #bf65a0;
+    height: 90%;
+}
+
+.basicContainer {
+    background-color: white;
+    margin: 5% 20% 5% 20%;
+    box-shadow: 0px 0px 20px;
+    border-radius: 5px;
+    height: 90%;
+    position: relative;
+
+}
+
+.leftContainer {
+    float: left;
+    width: 30%;
+    background: linear-gradient(to top left, #731649, #bf65a0);
+    min-height: 100%;
+}
+
+.rightContainer {
+    float: left;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+.headerOfRightSection {
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #731649, #bf65a0);
+    height: 50px;
 }
 
 .showToDoList {
-    
+    position: absolute;
+    left: 0;
+    top: 50px;
+    box-sizing: border-box;
+    /* background-color: burlywood; */
+    height: 78%;
+    width: 100%;
+    overflow-y: auto;
+    /* border: solid 1px black; */
 }
+
+.addToDoList {
+    display: inline-flex;
+    box-sizing: border-box;
+    /* height: 20%; */
+    width: 100%;
+    /* left: 0; */
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+
+.addToDoTextInput { 
+    box-sizing: border-box;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid #731649;
+    color: #731649;
+    width: 90%;
+}
+
+.addToDoTextInput:focus {
+    border: none;
+    border-bottom: 2px solid #731649;
+    outline: none;
+}
+
+.buttonBlock {
+    box-sizing: border-box;
+    width: 10%;
+}
+.addToDoList button {
+    border: 2px solid #731649;    
+    border-radius: 100% 100%;
+    border-color: #731649;
+    color: #731649;
+    min-height: 30px;
+    min-width: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.elementOfList {
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #731649;
+    color: white;
+}
+
+.completeButtons {
+    float: right;
+}
+
+/* hr {
+    border: 1px solid #2b2828;
+    border-radius: 50% 50%;
+} */
+
+h1 {
+    height: 100%;
+    margin: auto;
+    margin-left: 10px;
+    color: white;
+}
+
+.TimeAndDate {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.time, .date {
+    text-align: right;
+    width: 100%;
+    float: right;
+    color: white;
+}
+
+.time {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+}
+
+.date {
+    font-family: Fatface, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
